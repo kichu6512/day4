@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col pt-5" *ngFor="let item of collections ">
+
+            <div class="card" >
+                <img src="../../../assets/image/{{item.image}}" class="card-img-top" >
+                <div class="card-body">
+                  <h5 class="card-title">{{item.title}}</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a (click)="goTo(item.title)" class="btn btn-primary">More Information</a>
+                </div>
+              </div>
+
+
+        </div>
+    </div>
+</div>
